@@ -1,0 +1,11 @@
+# Sample URLs for the phishing detector.
+# Examples only — for training and testing the bundled model, not live targets.
+# LEGIT
+https://www.github.com
+https://www.wikipedia.org
+https://www.python.org
+# PHISHING PATTERNS (lookalike domains, IP-based URLs, @ tricks)
+https://paypal.com.secure-login.tk/verify
+http://185.220.101.45/paypal/login
+https://google.com@evil-login.ru/signin
+https://apple-id-verify.net/login
