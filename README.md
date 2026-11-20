@@ -1,18 +1,18 @@
 # AI-Based Phishing Detection System
 
-A lab-only, defensive phishing detector in Python. Paste a URL and it
+A defensive phishing detector in Python. Paste a URL and it
 returns an explainable verdict — a 0-100 score, a label (LEGIT /
 SUSPICIOUS / PHISHING), and the plain-language reasons behind it. The
 detector combines lexical URL features, a brand-impersonation check,
 HTML signals from the submitted page, and a scikit-learn RandomForest
 model trained on the bundled labeled examples.
 
-> **Lab-only scope.** Analyze only URLs you submit yourself, or the
-> bundled samples. The server binds to `127.0.0.1` and never scans
-> anything on its own. There is no mass scanning and no real victims
-> here. The score is a hint — always verify a suspicious URL yourself
-> before acting (check the real domain in the browser, never enter
-> credentials on a page you do not trust).
+> Analyze only URLs you submit yourself, or the bundled samples. The
+> server binds to `127.0.0.1` and never scans anything on its own. There
+> is no mass scanning and no real victims here. The score is a hint —
+> always verify a suspicious URL yourself before acting (check the real
+> domain in the browser, never enter credentials on a page you do not
+> trust).
 
 ## What it does
 
@@ -228,9 +228,9 @@ ai-phishing-detector/
 
 ## Security
 
-- Lab-only: analyze only URLs you submit yourself or the bundled
-  samples. Do not point this at other people's links, and never use
-  it to test real victims.
+- Analyze only URLs you submit yourself or the bundled samples. Do not
+  point this at other people's links, and never use it to test real
+  victims.
 - The server listens on `127.0.0.1` only; all endpoints except
   `/health` require the `X-API-Key` header.
 - The API key lives in `.env` and is git-ignored — never commit it,

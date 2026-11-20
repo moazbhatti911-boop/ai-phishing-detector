@@ -2,7 +2,7 @@
 
 ## What it is
 
-A lab-only, defensive phishing detector. It analyzes one URL at a time —
+A defensive phishing detector. It analyzes one URL at a time —
 only URLs the user submits (or the bundled samples) — and returns an
 explainable verdict: a 0-100 score, a label (LEGIT / SUSPICIOUS /
 PHISHING), and the plain-language reasons behind it.
